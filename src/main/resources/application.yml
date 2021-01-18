@@ -1,0 +1,13 @@
+server:
+  port: 7001
+
+spring:
+  application:
+    name: users-provider
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1.com:6001/eureka/,http://eureka2.com:6002/eureka/
+    register-with-eureka: true
+    fetch-registry: true
